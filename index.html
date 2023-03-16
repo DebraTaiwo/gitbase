@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+    <body>
+        <div class="container">
+                <form onsubmit="myFunction()"> 
+                <legend><h3 style="text-align: center;"><b>BIO-DATA FORM</b></h3></legend>
+                <p><label for = "Name">Name:</label>
+                    <input type = "text" id="Name" name="Name" size="25" required></p>
+                <p><label for = "email">Email:</label>
+                    <input type = "email" id="email" name="email" size="25" required></p>
+                <p><label for = "Phone">Phone No:</label>
+                    <input type = "Phone" id="Phone No" name="Phone No" size="21" required></p>
+                <p><label for = "Gender">Gender:</label>
+                    <input type = "radio" id="Male" name="Gender" value="Male">
+                    <label for = "male">Male</label>
+                    <input type = "radio" id="Female" name="Gender" value="Female">
+                    <label for = "female">Female</label></p>
+                <p><label for = "password">Password:</label>
+                    <input type = "password" id="password" name="password" size="21" required></p>
+                    <button type="submit" class="btn" onsubmit="myFunction()">SUBMIT</button>
+                    </div>    
+                </form>
+                <script>
+                    function myFunction(){
+                        alert("Congratulation! Your form has been submitted successfully.")
+                    }
+                </script>
+                
+    </body>
+</html>
+<style>
+    *{
+    margin: 5px;
+    padding: 1px;
+    box-sizing: border-box;
+    font-family:Georgia;
+}
+.container{
+    width: 100%;
+    height:100vh;
+    background-color:blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+.btn{
+    padding: 10px;
+    background-color: violet;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+</style>
